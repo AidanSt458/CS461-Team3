@@ -1,4 +1,4 @@
 1) Restart Game does not clear board of ships and heat map
-2) Calculations after hitting a ship leave multiple spots with 100% probability. This should never exceed 100%. this bug is mainly caused by formatting arbitrarily large prbability numbers after hitting a ship.
-3)Near end game some spot that have been shot will not drop probability to 0%
-4)Green on heat map signifies where AI shot. In endgame sometimes there will be multiple green spots. There should only be 1.
+2) Calculations after hitting a ship leave multiple spots with 100% probability. This should never exceed 100%. this bug is mainly caused by formatting arbitrarily large prbability numbers after hitting a ship. - This is due to having equal chance of each cells being shot so to fix this is randomly selects one of the 2 positions
+3)Near end game some spot that have been shot will not drop probability to 0% - Fixed
+4)Green on heat map signifies where AI shot. In endgame sometimes there will be multiple green spots. There should only be 1. - This is due to similar weights so probability is then random between the spots of the same weight
